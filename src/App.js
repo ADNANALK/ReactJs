@@ -13,10 +13,11 @@ import { selectIsLoggedIn } from './features/user/userSlice';
 import { useSelector } from 'react-redux';
 import './App.css';
 
+
 function App() {
   return (
     <Router>
-      <div>
+
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
@@ -33,21 +34,21 @@ function App() {
             <HomePage />
           </PrivateRoute>
         </Switch>
-      </div>
     </Router>
   );
 }
 
 function PrivateRoute({ children , ...rest }){
   const isLoggedIn = useSelector(selectIsLoggedIn);
+
   return (
     <Route
       {...rest}
-      render={({ location }) => 
+      render={({ location }) =>
         isLoggedIn ? (
           children
         ): (
-          <Redirect to={{ 
+          <Redirect to={{
             pathname: '/login',
             state: { from: location }
           }}

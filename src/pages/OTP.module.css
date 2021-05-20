@@ -1,0 +1,41 @@
+.partitioned {
+    padding-left: 20px  !important;
+    letter-spacing: 48px !important;
+    border: 0 gray !important;
+    background-image: linear-gradient(to left, #ffffff 70%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom !important;
+    background-size: 50px 1px !important;
+    background-repeat: repeat-x !important;
+    background-position-x: 35px !important;
+    height: 45px !important;
+    margin-bottom: 20px !important;
+    width: fit-content !important;
+    border-radius: 60px;
+}
+
+.otp{
+    margin: 20px 0 !important;
+}
+.otpNote{
+    text-align: center !important;
+}
+
+.verifyBtn {
+    background: #FF7010 !important;
+    color: #FFFFFF !important;
+    font-size: 18px !important;
+    border-radius: 29px !important;
+}
+
+.resendText {
+    margin-top: 20px !important;
+    color: #707070 !important;
+    font-size: 18px !important;
+}
+
+.resendText a {
+    color: #0978FF;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 18px !important;
+}

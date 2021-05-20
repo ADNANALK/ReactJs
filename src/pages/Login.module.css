@@ -1,0 +1,59 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: gray;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: gray;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: gray;
+}
+
+.inputGroup {
+    border-radius: 1.25rem !important;
+}
+
+
+.signUpBtn {
+margin-top: 20px !important;
+    background: #FF7010 !important;
+    color: #FFFFFF !important;
+    font-size: 18px !important;
+    border-radius: 29px !important;
+}
+
+.alreadyAccount {
+    margin-top: 20px !important;
+    color: #707070 !important;
+    font-size: 18px !important;
+}
+
+.or{
+    color: #707070 !important;
+    font-size: 18px !important;
+}
+.aLogin{
+    color: #0978FF;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 18px !important;
+}
+
+.facebookBtn{
+    margin-bottom: 20px !important;
+    background: transparent !important;
+    border-radius: 29px !important;
+    border: 1px solid #E2E2E2 !important;
+    color: #2B2B2B !important;
+    padding: 5px 10px !important;
+    font-size: 18px !important;
+    cursor: pointer !important;
+}
+
+.facebookLogo{
+    /*padding: 10px !important;*/
+    float: left;
+
+}

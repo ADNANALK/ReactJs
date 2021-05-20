@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 const MAX_RATE = 5;
 
-export default function Rate({ style }){
+export default function Rate(props,{ style }){
   const [rate, setRate] = useState(4);
 
+  // setRate(props.rate);
+
   return (
-    <div style={{ ...style, ...styles.container }}>
-      {[...Array(rate)].map(v => <div style={{ ...styles.circle, ...styles.filledCircle }}></div>)}
-      {[...Array(MAX_RATE - rate)].map(v => <div style={styles.circle}></div>)}
+    <div style={{ ...style, ...styles.container }} >
+      {[...Array(props.rate)].map(v => <div style={{ ...styles.circle, ...styles.filledCircle }}></div>)}
+      {[...Array(MAX_RATE - props.rate)].map(v => <div style={styles.circle}></div>)}
+
     </div>
   );
 }
@@ -19,9 +22,9 @@ const styles = {
   },
   circle: {
     borderRadius: '50%',
-    width: 15,
-    height: 15,
-    border: '1px solid black',
+    width: 20,
+    height: 20,
+    border: '2px solid #232323',
     margin: '0px 1px'
   },
   filledCircle: {
